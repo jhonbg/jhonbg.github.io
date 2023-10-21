@@ -1,3 +1,36 @@
-<h1>Este es un sitio web con Github Pages</h1>
-<p>Y fue creado con amor para el Curso de Git y Github de Platzi</p>
-<p><img src="https://i.pinimg.com/originals/d8/2c/c8/d82cc8e5897f04f09c5956936416ae24.gif"/></p>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <LINK rel="stylesheet" type="text/css" href="./Laboratorio7.css">
+    </head>
+    <body>
+
+    <form name="calculator">
+        <h3>Calculadora </h3>
+        <input type="textfield" name="ans" value="" id="ans" onkeypress="return '*1234567890-+/'.includes(event.key)">
+        <br>
+        <input type="button" value="1" onClick="verify(value)">
+        <input type="button" value="2" onClick="verify(value)">
+        <input type="button" value="3" onClick="verify(value)">
+        <input type="button" value="+" onClick="verify(value)">
+        <br>
+        <input type="button" value="4" onClick="verify(value)">
+        <input type="button" value="5" onClick="verify(value)">
+        <input type="button" value="6" onClick="verify(value)">
+        <input type="button" value="-" onClick="verify(value)">
+        <br>
+        <input type="button" value="7" onClick="verify(value)">
+        <input type="button" value="8" onClick="verify(value)">
+        <input type="button" value="9" onClick="verify(value)">
+        <input type="button" value="*" onClick="verify(value)">
+        <br>
+        <input type="button" value="0" onClick="verify(value)">
+        <input type="reset" value="c" onClick="document.calculator.ans.disabled = false">
+        <input type="button" value="/" onClick="verify(value)">
+        <input type="button" value="=" onclick="result()">
+        </form>
+        <script src="Laboritorio7.js"></script>
+    </body>
+</html>
